@@ -1,4 +1,4 @@
-package learningJava;
+package top.Seiei.learningJava;
 
 import java.util.Arrays;
 
