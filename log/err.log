@@ -1,0 +1,14 @@
+10-14 11:18:38:274 {main} ERROR top.Seiei.logger.AboutCommonsLoggingDemo
+报错
+
+java.lang.NumberFormatException: null
+	at java.lang.Integer.parseInt(Unknown Source) ~[?:1.8.0_181]
+	at java.lang.Integer.parseInt(Unknown Source) ~[?:1.8.0_181]
+	at top.Seiei.logger.AboutCommonsLoggingDemo.main(AboutCommonsLoggingDemo.java:18) [classes/:?]
+10-14 11:24:06:695 {main} ERROR top.Seiei.logger.AboutCommonsLoggingDemo
+报错
+
+java.lang.NumberFormatException: null
+	at java.lang.Integer.parseInt(Unknown Source) ~[?:1.8.0_181]
+	at java.lang.Integer.parseInt(Unknown Source) ~[?:1.8.0_181]
+	at top.Seiei.logger.AboutCommonsLoggingDemo.main(AboutCommonsLoggingDemo.java:18) [classes/:?]
