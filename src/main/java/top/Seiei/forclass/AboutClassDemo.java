@@ -22,7 +22,8 @@ public class AboutClassDemo {
 			Field field = studentClass.getField("name");
 			System.out.println(field.getName());
 			Field field1 = studentClass.getDeclaredField("sex");
-			field1.setAccessible(true); // 强制访问 private
+			// Field field2 = studentClass.getField("sex"); 使用 getField 访问非 public 字段会报错
+			field1.setAccessible(true); // 强制访问 private，不添加这语句，无法执行下一行
 			System.out.println(field1.get(null)); // 访问静态字段的时候只需传入 null 值
 			Student student1 = new Student();
 			System.out.println(field.get(student1));
