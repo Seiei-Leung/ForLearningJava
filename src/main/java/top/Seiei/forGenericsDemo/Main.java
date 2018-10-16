@@ -29,9 +29,5 @@ public class Main {
 
 }
 
-class One<T> {
-	public T first;
-}
-
 class IntOne extends One<Integer> {
 }

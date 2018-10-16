@@ -1,7 +1,5 @@
 package top.Seiei.learningJava;
 
-import java.util.ArrayList;
-import java.util.List;
 
 /**
  * 	测试向下转型的条件
