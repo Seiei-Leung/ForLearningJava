@@ -4,12 +4,13 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
+import java.util.zip.ZipFile;
 
 public class AboutInputStreamDemo {
 	public static void main(String[] args) throws FileNotFoundException, IOException {
 		// jdk1.7 支持的 try(resource) 自动调用 close() 方法
 		// 使用缓冲区读取字节
-		try (InputStream fileInputStream = new FileInputStream("F:\\javacode\\ForLearningJava\\src\\forIO.txt")) {
+		try (InputStream fileInputStream = new FileInputStream("src/forIO.txt")) {
 			int n;
 			byte[] bytes = new byte[20]; // new byte[1024]，一个中文占3个字节
 			while ((n = fileInputStream.read(bytes)) != -1) {
