@@ -4,7 +4,10 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
-import java.util.zip.ZipFile;
+
+/*
+ *	FileInputStream 的使用
+ */
 
 public class AboutInputStreamDemo {
 	public static void main(String[] args) throws FileNotFoundException, IOException {

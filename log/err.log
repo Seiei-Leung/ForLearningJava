@@ -12,3 +12,10 @@ java.lang.NumberFormatException: null
 	at java.lang.Integer.parseInt(Unknown Source) ~[?:1.8.0_181]
 	at java.lang.Integer.parseInt(Unknown Source) ~[?:1.8.0_181]
 	at top.Seiei.logger.AboutCommonsLoggingDemo.main(AboutCommonsLoggingDemo.java:18) [classes/:?]
+10-18 09:40:49:177 {main} ERROR top.Seiei.logger.AboutCommonsLoggingDemo
+报错
+
+java.lang.NumberFormatException: null
+	at java.lang.Integer.parseInt(Integer.java:542) ~[?:1.8.0_171]
+	at java.lang.Integer.parseInt(Integer.java:615) ~[?:1.8.0_171]
+	at top.Seiei.logger.AboutCommonsLoggingDemo.main(AboutCommonsLoggingDemo.java:19) [classes/:?]

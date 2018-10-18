@@ -4,6 +4,13 @@ import java.io.File;
 import java.io.FilenameFilter;
 import java.io.IOException;
 
+/*
+ *	File 对象的使用，包括 目录File 和 文件File
+ *	FilenameFilter 过滤器的使用
+ *
+ */
+
+
 public class AboutFileDemo {
 
 	public static void main(String[] args) throws IOException {

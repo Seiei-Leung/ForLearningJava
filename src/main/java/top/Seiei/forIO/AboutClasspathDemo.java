@@ -3,6 +3,12 @@ package top.Seiei.forIO;
 import java.io.IOException;
 import java.io.InputStream;
 
+/*
+ *	使用  classpath资源 获取 log4j2.xml 文件
+ *	使用 classpath资源 获取文件路径信息
+ *
+ */
+
 public class AboutClasspathDemo {
 	public static void main(String[] args) throws IOException {
 
@@ -14,6 +20,8 @@ public class AboutClasspathDemo {
 			}
 		}
 		System.out.println(AboutClasspathDemo.class.getResource(""));
+		// file:/F:/javacode/ForLearningJava/target/classes/top/Seiei/forIO/
 		System.out.println(AboutClasspathDemo.class.getResource("/log4j2.xml"));
+		// file:/F:/javacode/ForLearningJava/target/classes/log4j2.xml
 	}
 }

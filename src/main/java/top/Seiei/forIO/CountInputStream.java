@@ -6,6 +6,12 @@ import java.io.FilterInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 
+/*
+ *	构建一个扩展 InputStream 类功能的 扩展类，使用的是组合方式而非继承
+ *
+ */
+
+
 public class CountInputStream extends FilterInputStream {
 
 	public CountInputStream(InputStream in) {

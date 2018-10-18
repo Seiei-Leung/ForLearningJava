@@ -1,4 +1,4 @@
-package top.Seiei.forGenericsDemo;
+package top.Seiei.forGenerics;
 
 import java.lang.reflect.ParameterizedType;
 import java.lang.reflect.Type;

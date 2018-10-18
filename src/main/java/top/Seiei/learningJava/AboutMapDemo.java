@@ -6,6 +6,11 @@ import java.util.Map;
 import java.util.Map.Entry;
 import java.util.TreeMap;
 
+/*
+ *	HashMap 和 TreeMap 的使用
+ */
+
+
 public class AboutMapDemo {
 
 	public static void main(String[] args) {

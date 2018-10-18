@@ -1,4 +1,4 @@
-package top.Seiei.forAnnotaionDemo;
+package top.Seiei.forAnnotaion;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

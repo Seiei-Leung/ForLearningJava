@@ -1,4 +1,4 @@
-package top.Seiei.forAnnotaionDemo;
+package top.Seiei.forAnnotaion;
 
 public class Person {
 

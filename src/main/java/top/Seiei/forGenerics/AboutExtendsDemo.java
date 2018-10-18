@@ -1,4 +1,8 @@
-package top.Seiei.forGenericsDemo;
+package top.Seiei.forGenerics;
+
+/**
+ *	测试 泛型 <? extends Number> 作为方法参数时，对它的操作限制
+ */
 
 public class AboutExtendsDemo {
 

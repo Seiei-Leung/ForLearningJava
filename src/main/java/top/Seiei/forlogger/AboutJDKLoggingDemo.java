@@ -1,4 +1,4 @@
-package top.Seiei.logger;
+package top.Seiei.forlogger;
 
 import java.util.logging.Level;
 import java.util.logging.Logger;
