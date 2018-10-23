@@ -39,7 +39,7 @@ public class RSAkeyPair {
 		// 表示输出的密钥长度是 1024 位
 		kpGen.initialize(1024);
 		
-		// 输出密钥对
+		// 获取密钥对
 		KeyPair keyPair = kpGen.generateKeyPair();
 		
 		// 获取私匙
