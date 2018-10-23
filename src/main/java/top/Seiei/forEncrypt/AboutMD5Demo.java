@@ -5,6 +5,10 @@ import java.math.BigInteger;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 
+/*
+ *	MD5 加密
+ */
+
 public class AboutMD5Demo {
 
 	public static void main(String[] args) throws NoSuchAlgorithmException, UnsupportedEncodingException {
