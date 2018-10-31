@@ -1,4 +1,4 @@
-package top.Seiei.learningJava;
+package top.Seiei.javaUtil;
 
 import java.io.BufferedReader;
 import java.io.IOException;
