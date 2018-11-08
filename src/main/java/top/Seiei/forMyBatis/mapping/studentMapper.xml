@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- namespace 命名空间，必须有，意思与包名一样，在 SqlSession 中调用时使用 -->
+<mapper namespace="top.Seiei.forMyBatis.dao.StudentDao">
+	<!-- 
+		resultMap 标签表示查询后的结果以什么样的 java 类型（对象）表示
+		其中 id 是唯一的，用于附着于数据库操作标签中的 resultMap 或 resultType
+		type 表示的是返回的对象，意指在外部提前设计好的 bean
+		result 标签中的 column 表示数据库对应的列名称，而 property 表示的是指定赋值的 bean 对应的属性
+	-->
+	<resultMap id="BaseResultMap" type="top.Seiei.forMyBatis.bean.Student">
+		<result column="id" jdbcType="INTEGER" property="id" />
+		<result column="class_id" jdbcType="INTEGER" property="class_id" />
+		<result column="name" jdbcType="VARCHAR" property="name" />
+	</resultMap>
+	<!-- 
+		数据库操作标签
+		如 select 标签
+		其中 id 是唯一的，用于在 SqlSession 调用，resultMap 用于指向返回结果对象 
+	 -->
+	<!-- 查询数据 -->
+	<select id="getAllByPage" resultMap="BaseResultMap">
+		select * from students
+	</select>
+</mapper>
