@@ -20,7 +20,7 @@
 		其中 id 是唯一的，用于在 SqlSession 调用，resultMap 用于指向返回结果对象 
 	 -->
 	<!-- 查询数据 -->
-	<select id="getAllByPage" resultMap="BaseResultMap">
+	<select id="getAllByPage" resultMap="BaseResultMap" parameterType="java.util.Map">
 		select * from students
 	</select>
 </mapper>

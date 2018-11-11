@@ -15,6 +15,14 @@
 		name="useColumnLabel" value="true"/> </settings> <typeAliases> <typeAlias 
 		alias="UserAlias" type="org.apache.ibatis.submitted.complex_property.User"/> 
 		</typeAliases> -->
+	
+	<!-- 注册拦截器 -->
+	<plugins>
+		<plugin interceptor="top.Seiei.forMyBatis.interceptor.PageInterceptor"></plugin>
+	</plugins>
+		
+		
+		
 	<environments default="development">
 		<environment id="development">
 			<transactionManager type="JDBC">
