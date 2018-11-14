@@ -13,22 +13,22 @@ public class AboutClassDemo {
 
 	public static void main(String[] args) {
 		Class studentClass = Student.class;
-		System.out.println(studentClass.getName());
-		System.out.println(studentClass.getSimpleName());
-		System.out.println(studentClass.getTypeName());
-		System.out.println(studentClass.getPackage().getName());
+		System.out.println(studentClass.getName()); // top.Seiei.forclass.Student
+		System.out.println(studentClass.getSimpleName()); // Student
+		System.out.println(studentClass.getTypeName()); // top.Seiei.forclass.Student
+		System.out.println(studentClass.getPackage().getName()); // top.Seiei.forclass
 		try {
 			System.out.println("==========================");
 			Field field = studentClass.getField("name");
-			System.out.println(field.getName());
+			System.out.println(field.getName()); // name
 			Field field1 = studentClass.getDeclaredField("sex");
 			// Field field2 = studentClass.getField("sex"); 使用 getField 访问非 public 字段会报错
 			field1.setAccessible(true); // 强制访问 private，不添加这语句，无法执行下一行
-			System.out.println(field1.get(null)); // 访问静态字段的时候只需传入 null 值
+			System.out.println(field1.get(null)); //man, 访问静态字段的时候只需传入 null 值
 			Student student1 = new Student();
-			System.out.println(field.get(student1));
-			field.set(student1, "Taka");
-			System.out.println(student1.name);
+			System.out.println(field.get(student1)); // Seiei
+			field.set(student1, "Taka"); // 通过反射修改数值
+			System.out.println(student1.name); // Taka
 		} catch (NoSuchFieldException e1) {
 			e1.printStackTrace();
 		} catch (SecurityException e1) {
@@ -42,7 +42,7 @@ public class AboutClassDemo {
 		try {
 			System.out.println("==========================");
 			Student student2 = (Student) studentClass.newInstance();
-			System.out.println(student2.name);
+			System.out.println(student2.name); // Seiei
 		} catch (InstantiationException e) {
 			e.printStackTrace();
 		} catch (IllegalAccessException e) {
