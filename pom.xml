@@ -54,6 +54,12 @@
 			<artifactId>mybatis</artifactId>
 			<version>3.4.1</version>
 		</dependency>
+        <!-- StringUtils 工具库 -->
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>3.5</version>
+        </dependency>
 	</dependencies>
 	<build>
 		<finalName>ForLearningJava</finalName>
